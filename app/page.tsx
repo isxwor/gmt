@@ -8,7 +8,7 @@ import { OnBoardCarousel } from '#/components/onboard-carousel';
 
 const Home = () => (
   <div>
-    <div className='relative bg-green-400 min-h-screen'>
+    <div className='relative min-h-screen'>
       <Image
         src={onBoardBackground}
         alt='Picture of a burger'

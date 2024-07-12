@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --primary: 33, 100%, 50%, 1;
+
+    --muted: 0, 0%, 53%, 1;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

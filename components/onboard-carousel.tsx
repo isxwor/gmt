@@ -14,7 +14,7 @@ export const OnBoardCarousel = ({ items }: { items: OnBoardContentItem[] }) => {
 
   return (
     <div className='container w-full absolute bottom-6 z-10'>
-      <div className='bg-[#FE8C00] flex flex-col justify-between text-white p-8 rounded-[48px] h-[400px]'>
+      <div className='bg-primary flex flex-col justify-between text-white p-8 rounded-[48px] h-[400px]'>
         <div className='space-y-4'>
           <div className='text-[32px] leading-10 font-semibold text-center'>
             {items[currentIndex].title}
