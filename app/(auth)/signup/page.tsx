@@ -134,6 +134,7 @@ const SignupPage = () => {
                     </FormLabel>
                   </div>
                 </FormControl>
+                <FormMessage />
               </FormItem>
             )}
           />
