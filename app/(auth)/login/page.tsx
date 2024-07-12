@@ -14,6 +14,7 @@ import { Input } from '#/components/ui/input';
 import { PasswordInput } from '#/components/ui/password-input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 
 import * as z from 'zod';
@@ -29,9 +30,11 @@ const LoginPage = () => {
   const form = useForm<LoginSchema>({
     resolver: zodResolver(loginSchema),
   });
+  const router = useRouter();
 
   const onSubmit = (values: LoginSchema) => {
     console.log(values);
+    router.push('/login-success');
   };
 
   return (
