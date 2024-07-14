@@ -8,7 +8,7 @@ import { Drawer, DrawerContent } from '#/components/ui/drawer';
 import { cn } from '#/lib/utils';
 import onBoardBackground from '#/public/images/onboard-1.png';
 
-const Home = () => (
+const LoginSuccessPage = () => (
   <div>
     <div className='relative min-h-screen'>
       <Image
@@ -41,4 +41,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default LoginSuccessPage;
