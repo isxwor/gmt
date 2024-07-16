@@ -1,20 +1,28 @@
 import { ChevronLeftIcon } from '#/components/icons/chevron-left';
-import { Button } from '#/components/ui/button';
+import { Button, buttonVariants } from '#/components/ui/button';
 import Image from 'next/image';
 
 import { Clock } from '#/components/clock';
+import { Quotes } from '#/components/quotes';
 import profileImage from '#/public/images/profile.jpeg';
+import Link from 'next/link';
+import { cn } from '#/lib/utils';
 
 const TrackingPage = () => (
   <div className='pt-8 bg-primary space-y-3'>
     <div className='text-white font-semibold py-3 container flex items-center justify-between'>
-      <Button
-        variant='outline'
-        size='icon'
-        className='rounded-full size-9'
+      <Link
+        href='/login-success'
+        className={cn(
+          buttonVariants({
+            variant: 'outline',
+            size: 'icon',
+            className: 'rounded-full size-9',
+          })
+        )}
       >
         <ChevronLeftIcon />
-      </Button>
+      </Link>
       <p>Tracking</p>
       <Image
         src={profileImage}
@@ -25,6 +33,7 @@ const TrackingPage = () => (
     </div>
     <div className='bg-white min-h-screen flex flex-col gap-9 container py-6 rounded-t-[48px]'>
       <Clock />
+      <Quotes />
       <Button className='rounded-full'>Share Tracking Link</Button>
     </div>
   </div>
